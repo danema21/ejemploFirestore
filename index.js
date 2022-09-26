@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         querySnapshot.forEach((doc) => {
             const task = doc.data()
             html += `
-                <div>
+                <div class='task-content'>
                     <h3>${task.title}</h3>
                     <p>${task.description}</p>
                     <button class='btn-delete' data-id='${doc.id}'>Delete</button>
